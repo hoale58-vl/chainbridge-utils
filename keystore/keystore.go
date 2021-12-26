@@ -36,7 +36,7 @@ const EnvPassword = "KEYSTORE_PASSWORD"
 
 var keyMapping = map[string]string{
 	"ethereum":  "secp256k1",
-	"substrate": "sr25519",
+	"substrate": "secp256k1",
 }
 
 // KeypairFromAddress attempts to load the encrypted key file for the provided address,

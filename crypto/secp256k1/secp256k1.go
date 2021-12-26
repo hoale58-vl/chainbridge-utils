@@ -103,3 +103,7 @@ func (kp *Keypair) PublicKey() string {
 func (kp *Keypair) PrivateKey() *ecdsa.PrivateKey {
 	return kp.private
 }
+
+func (kp *Keypair) PrivateKeyAsByte() []byte {
+	return secp256k1.FromECDSA(kp.private)
+}
